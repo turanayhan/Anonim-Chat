@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_screen"
+    tools:context=".view.Register_photograph">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="350dp"
+        app:layout_constraintWidth_percent="0.8">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/chat"
+            android:backgroundTint="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="@font/agletsansbold"
+                android:text="İlk Fotoğrafını Ekle"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agletsanssemibold"
+                android:gravity="bottom|center"
+                android:text="Kendine ait bir fotoğraf yüklediğinde\nprofilin daha çok öne çıkar ve ilgi görür"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="120dp"
+
+            android:layout_height="120dp"
+            android:background="@drawable/btn_bg"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/img_circle"
+                android:backgroundTint="@color/bg_screen"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/agletsanssemibold"
+            android:gravity="bottom|left"
+            android:text="* Çıplaklık içermemeli\n\n* İlk Bakıldığında ne olduğu anlaşılmalı\n\n* Metin içeriğine sahip görsellerde küfür veya argo sözcükler\nolmamalı"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+
+
+
+
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/register"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/btn_control"
+            android:onClick="tr"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:drawableStart="@drawable/info"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/agletsansbold"
+            android:gravity="center|left"
+            android:text="Uygınsuz profil fotoğrafına sahip hesaplar\ndoğrudan askıya alınır"
+            android:textColor="@color/white"
+
+
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/register">
+
+        </TextView>
+
+
+        <ProgressBar
+            android:id="@+id/idPBLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:indeterminateTint="@color/white"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

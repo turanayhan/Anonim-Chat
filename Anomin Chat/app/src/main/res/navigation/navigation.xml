@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/registerGender">
+
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.hrdijital.kampuschat.view.LoginScreen"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen" >
+        <action
+            android:id="@+id/action_loginScreen_to_chat"
+            app:destination="@id/chat" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerScreen"
+        android:name="com.hrdijital.kampuschat.view.RegisterScreen"
+        android:label="fragment_register_screen"
+        tools:layout="@layout/fragment_register_screen" >
+        <action
+            android:id="@+id/action_registerScreen_to_registerUsername"
+            app:destination="@id/registerUsername" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.hrdijital.kampuschat.view.HomeScreen"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreen_to_registerScreen"
+            app:destination="@id/registerScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_loginScreen"
+            app:destination="@id/loginScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/chat"
+        android:name="com.hrdijital.kampuschat.view.Chat"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.hrdijital.kampuschat.view.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerUsername"
+        android:name="com.hrdijital.kampuschat.view.RegisterUsername"
+        android:label="fragment_register_username"
+        tools:layout="@layout/fragment_register_username" >
+        <action
+            android:id="@+id/action_registerUsername_to_register_photograph"
+            app:destination="@id/register_photograph" />
+    </fragment>
+    <fragment
+        android:id="@+id/register_photograph"
+        android:name="com.hrdijital.kampuschat.view.Register_photograph"
+        android:label="fragment_register_photograph"
+        tools:layout="@layout/fragment_register_photograph" >
+        <action
+            android:id="@+id/action_register_photograph_to_registerGender"
+            app:destination="@id/registerGender" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerGender"
+        android:name="com.hrdijital.kampuschat.view.RegisterGender"
+        android:label="fragment_register_gender"
+        tools:layout="@layout/fragment_register_gender" />
+</navigation>

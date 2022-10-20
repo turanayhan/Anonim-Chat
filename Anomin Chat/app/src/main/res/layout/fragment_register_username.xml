@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_screen"
+    tools:context=".view.RegisterUsername">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="350dp"
+        app:layout_constraintWidth_percent="0.8">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/chat"
+            android:backgroundTint="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="@font/agletsansbold"
+                android:text="Kullanıcı Adını Belirle"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agletsanssemibold"
+
+                android:gravity="bottom|center"
+                android:text="Kullanıcı adını daha sonra değiştiremezsin.\Akılda kalıcı bir kullanıcı adı seçmeye özen göster."
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditTextStyle"
+            app:hintEnabled="false"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:startIconContentDescription="email"
+            app:startIconDrawable="@drawable/person"
+            app:startIconTint="@color/white">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_mail"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg2"
+                android:backgroundTintMode="src_over"
+                android:fontFamily="@font/agletsansbold"
+                android:hint="Kullanıcı adı"
+                android:letterSpacing="0.06"
+                android:textColor="@color/white"
+                android:textColorHint="#C2C2C7"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/register"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/btn_control"
+            android:onClick="tr"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:drawableStart="@drawable/info"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/agletsansbold"
+            android:gravity="center|left"
+            android:text="Uygınsuz kullanıcı adına sahip hesaplar\ndoğrudan askıya alınır"
+            android:textColor="@color/white"
+
+
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/register">
+
+        </TextView>
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textField">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="@font/agletsansbold"
+                android:text="Kendinden Bahset"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agletsanssemibold"
+                android:gravity="center"
+                android:text="Kısa bir biyografi yazısı yazdığında daha çok kişişnin \nilgisini çekersin."
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg2"
+            android:gravity="left|top"
+            android:fontFamily="@font/agletsansbold"
+            android:hint="Örnek;Yaş 23 Malatya, dizi veya film hakkında sohbet edebiliriz."
+            android:letterSpacing="0.06"
+            android:textColor="@color/white"
+            android:textColorHint="#C2C2C7"
+            android:textSize="13sp"
+            android:padding="10dp"
+            android:lines="10"
+            android:maxLines="15"
+            android:minLines="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+
+        <ProgressBar
+            android:id="@+id/idPBLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:indeterminateTint="@color/white"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

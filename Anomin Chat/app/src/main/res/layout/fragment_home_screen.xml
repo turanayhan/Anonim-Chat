@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.HomeScreen"
+    android:background="@color/bg_screen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="350dp"
+        app:layout_constraintWidth_percent="0.8">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/chat"
+            android:backgroundTint="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="@font/agletsansbold"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agletsansbold"
+
+                android:gravity="bottom|center"
+                android:text="@string/app_description"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/cartoon"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <com.google.android.material.button.MaterialButton
+
+            android:layout_width="0dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/btn_create_account"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/agletsansbold"
+            android:text="@string/create_account"
+            android:textColor="@color/bg_screen"
+
+
+            app:cornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_create_account"
+            app:layout_constraintWidth_percent="0.8">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:fontFamily="@font/agletsansregular"
+                android:gravity="center"
+                android:letterSpacing="0.01"
+                android:text="Hesabın Var mı ? "
+                android:textColor="#B6B1EB"
+                android:textSize="13.5sp" />
+
+            <TextView
+                android:id="@+id/loginBtn"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:clickable="true"
+                android:backgroundTint="@color/bg_screen"
+                android:fontFamily="@font/agletsansbold"
+                android:paddingLeft="2dp"
+                android:letterSpacing="0.01"
+                android:text="Giriş Yap"
+                android:textColor="@color/white"
+                android:textSize="13.5sp" />
+
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.7">
+
+            <TextView
+
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:backgroundTint="@color/bg_screen"
+                android:clickable="true"
+                android:fontFamily="@font/agletsansregular"
+                android:gravity="center"
+                android:letterSpacing="0.01"
+                android:paddingLeft="2dp"
+                android:text="Kullanım Şartları"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:backgroundTint="@color/bg_screen"
+                android:clickable="true"
+                android:fontFamily="@font/agletsansregular"
+                android:gravity="center"
+                android:letterSpacing="0.01"
+                android:paddingLeft="2dp"
+                android:text="Gizlilik Politikası"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

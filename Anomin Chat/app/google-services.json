@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "19545693061",
+    "project_id": "kampus-8c077",
+    "storage_bucket": "kampus-8c077.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19545693061:android:3045165b5bfc16784482ec",
+        "android_client_info": {
+          "package_name": "com.hrdijital.kampuschat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19545693061-5qbhjmni4kaa5kt53tkcmvrvob2ursa3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfaXIE8P8hmposLSOhUJaGfyvturOIiEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19545693061-5qbhjmni4kaa5kt53tkcmvrvob2ursa3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
