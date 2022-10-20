@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/registerGender">
+    app:startDestination="@id/splashScreen">
 
     <fragment
         android:id="@+id/loginScreen"
@@ -34,6 +34,9 @@
         <action
             android:id="@+id/action_homeScreen_to_loginScreen"
             app:destination="@id/loginScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_passwordReset"
+            app:destination="@id/passwordReset" />
     </fragment>
     <fragment
         android:id="@+id/chat"
@@ -71,5 +74,23 @@
         android:id="@+id/registerGender"
         android:name="com.hrdijital.kampuschat.view.RegisterGender"
         android:label="fragment_register_gender"
-        tools:layout="@layout/fragment_register_gender" />
+        tools:layout="@layout/fragment_register_gender" >
+        <action
+            android:id="@+id/action_registerGender_to_startMessage"
+            app:destination="@id/startMessage" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordReset"
+        android:name="com.hrdijital.kampuschat.view.PasswordReset"
+        android:label="fragment_password_reset"
+        tools:layout="@layout/fragment_password_reset" />
+    <fragment
+        android:id="@+id/startMessage"
+        android:name="com.hrdijital.kampuschat.view.StartMessage"
+        android:label="fragment_start_message"
+        tools:layout="@layout/fragment_start_message" >
+        <action
+            android:id="@+id/action_startMessage_to_chat"
+            app:destination="@id/chat" />
+    </fragment>
 </navigation>

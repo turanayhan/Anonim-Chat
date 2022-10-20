@@ -48,10 +48,21 @@ class LoginScreen : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        App.toolbar_desing(R.drawable.arrow_back,Color.parseColor("#595C6E"),"Kampus",Color.parseColor("#000000"),Color.parseColor("#595C6E"),View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR,requireActivity(),View.VISIBLE)
+        App.toolbar_desing(R.drawable.arrow_back,Color.parseColor("#604CE3"),"Kampus",Color.parseColor("#FFFFFF"),Color.parseColor("#604CE3"),View.SYSTEM_UI_FLAG_LAYOUT_STABLE,requireActivity(),View.VISIBLE,View.VISIBLE)
         App.manager= PreferencesManager(requireActivity())
+        buttonControl()
 
 
+
+
+
+    }
+
+
+
+
+
+    fun buttonControl(){
 
         binding.loginBtn.setOnClickListener { _view: View? ->
 
@@ -77,17 +88,12 @@ class LoginScreen : Fragment() {
                         Toast.makeText(requireActivity(), "Bilgilerinizi kontrol ediniz", Toast.LENGTH_SHORT).show()
                     }
 
-
-
-
-
-
-
                 }
             }
+        }
 
 
-
+        binding.resetPassword.setOnClickListener {
 
 
         }
@@ -100,4 +106,5 @@ class LoginScreen : Fragment() {
         action=LoginScreenDirections.actionLoginScreenToChat()
         Navigation.findNavController(view).navigate(action)
     }
+
 }

@@ -3,6 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Repository/Anomin Chat/Anomin Chat/app/src/main/res/drawable/arrow_back.xml" value="0.2845" />
+        <entry key="..\:/Repository/Anomin Chat/Anomin Chat/app/src/main/res/drawable/btn_bg.xml" value="0.2845" />
+        <entry key="..\:/Repository/Anomin Chat/Anomin Chat/app/src/main/res/drawable/btn_control.xml" value="0.2845" />
+        <entry key="..\:/Repository/Anomin Chat/Anomin Chat/app/src/main/res/drawable/btn_register.xml" value="0.2845" />
+        <entry key="..\:/Repository/Anomin Chat/Anomin Chat/app/src/main/res/drawable/btn_register_focused.xml" value="0.2845" />
+        <entry key="..\:/Repository/Anomin Chat/Anomin Chat/app/src/main/res/drawable/cartoon.xml" value="0.2845" />
+        <entry key="..\:/Repository/Anomin Chat/Anomin Chat/app/src/main/res/drawable/gender1.xml" value="0.2845" />
+        <entry key="..\:/Repository/Anomin Chat/Anomin Chat/app/src/main/res/drawable/img_circle.xml" value="0.2845" />
+        <entry key="..\:/Repository/Anomin Chat/Anomin Chat/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Repository/Anomin Chat/Anomin Chat/app/src/main/res/layout/fragment_chat.xml" value="0.2997007268063275" />
+        <entry key="..\:/Repository/Anomin Chat/Anomin Chat/app/src/main/res/layout/fragment_home_screen.xml" value="0.2997007268063275" />
+        <entry key="..\:/Repository/Anomin Chat/Anomin Chat/app/src/main/res/layout/fragment_login_screen.xml" value="0.2997007268063275" />
+        <entry key="..\:/Repository/Anomin Chat/Anomin Chat/app/src/main/res/layout/fragment_password_reset.xml" value="0.2997007268063275" />
+        <entry key="..\:/Repository/Anomin Chat/Anomin Chat/app/src/main/res/layout/fragment_register_gender.xml" value="0.23169601482854496" />
+        <entry key="..\:/Repository/Anomin Chat/Anomin Chat/app/src/main/res/layout/fragment_register_screen.xml" value="0.23169601482854496" />
+        <entry key="..\:/Repository/Anomin Chat/Anomin Chat/app/src/main/res/layout/fragment_start_message.xml" value="0.2997007268063275" />
         <entry key="..\:/Repository/KampusChat/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.126" />
         <entry key="..\:/Repository/KampusChat/app/src/main/res/drawable/arrow_back.xml" value="0.126" />
         <entry key="..\:/Repository/KampusChat/app/src/main/res/drawable/btn_bg.xml" value="0.1565" />

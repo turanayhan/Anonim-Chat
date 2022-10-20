@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         App.toolbar = binding.ToolbarApp
-        App.toolbar_text = binding.tolbarText
+        App.logo = binding.tolbarText
         setSupportActionBar(App.toolbar)
 
 //       navigationController=Navigation.findNavController(this,R.id.fragmentContainerViews)

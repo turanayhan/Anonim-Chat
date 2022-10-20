@@ -7,25 +7,28 @@
     android:background="@color/bg_screen"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
         android:id="@+id/tolbar_text"
-        android:layout_width="0dp"
-        android:layout_height="30dp"
-        android:gravity="end"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        android:background="@drawable/chat"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
         android:textColor="@color/white"
         android:textSize="25sp"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="0.45" />
+        android:orientation="horizontal" />
+
 
 
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/ToolbarApp"
         android:layout_width="match_parent"
-        android:background="@color/bg_screen"
+
         android:layout_height="40dp"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
