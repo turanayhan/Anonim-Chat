@@ -82,15 +82,16 @@ class RegisterScreen : Fragment() {
 
                     if(it.isSuccessful){
 
-                        Toast.makeText(activity,"giris Başarılı",Toast.LENGTH_LONG).show()
-
+                        Toast.makeText(activity,"Kayıt başarılı",Toast.LENGTH_LONG).show()
                         bind.progresBar.visibility=View.GONE
+                        App.user.mail=registerMail
+                        App.user.password=registerPassword
+                        bind.progresBar.visibility=View.VISIBLE
 
-                        dbSave(registerMail,registerUser,registerPassword,_context)
+                        action=RegisterScreenDirections.actionRegisterScreenToRegisterUsername()
+                        Navigation.findNavController(_context).navigate(action)
 
                     }
-
-
 
                 }).addOnFailureListener(OnFailureListener {
                 Toast.makeText(activity,"Bu kullanıcı zaten kayıtlı",Toast.LENGTH_LONG).show()
@@ -100,16 +101,7 @@ class RegisterScreen : Fragment() {
     }
 
 
-    fun dbSave(mail:String,registerUser:String,password:String,_context:View){
 
-   /*     db.collection("User")
-            .add(User(mail,registerUser,password))
-            .addOnSuccessListener {
-                action=RegisterScreenDirections.actionRegisterScreenToLoginScreen()
-                Navigation.findNavController(_context).navigate(action)
-
-            }*/
-    }
 
 
 

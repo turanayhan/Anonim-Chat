@@ -1,5 +1,6 @@
 package com.hrdijital.kampuschat.view
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,6 +12,7 @@ import com.hrdijital.kampuschat.R
 import com.hrdijital.kampuschat.databinding.ActivityMainBinding
 import com.hrdijital.kampuschat.databinding.FragmentHomeScreenBinding
 import com.hrdijital.kampuschat.databinding.FragmentLoginScreenBinding
+import com.hrdijital.kampuschat.utils.App
 
 
 class HomeScreen : Fragment() {
@@ -37,15 +39,13 @@ class HomeScreen : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
+        App.toolbar_desing(null,Color.parseColor("#604CE3"),"Kampus", Color.parseColor("#FFFFFF"),Color.parseColor("#604CE3"),View.SYSTEM_UI_FLAG_LAYOUT_STABLE,requireActivity(),View.VISIBLE,View.VISIBLE)
         binding.btnCreateAccount.setOnClickListener {
 
             action=HomeScreenDirections.actionHomeScreenToRegisterScreen()
             Navigation.findNavController(it).navigate(action)
 
         }
-
         binding.loginBtn.setOnClickListener {
             action=HomeScreenDirections.actionHomeScreenToLoginScreen()
             Navigation.findNavController(it).navigate(action)

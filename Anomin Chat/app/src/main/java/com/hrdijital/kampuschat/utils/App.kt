@@ -6,7 +6,7 @@ import android.app.Application
 import android.widget.LinearLayout
 
 import android.widget.TextView
-
+import com.hrdijital.kampuschat.model.User
 
 
 class App: Application() {
@@ -16,11 +16,15 @@ class App: Application() {
         var manager: PreferencesManager? = null
         @SuppressLint("StaticFieldLeak")
         lateinit var toolbar: androidx.appcompat.widget.Toolbar
+        @SuppressLint("StaticFieldLeak")
         lateinit var logo: LinearLayout
+        @SuppressLint("StaticFieldLeak")
+        lateinit var user:User
+
 
         // lateinit var toolbar_history: ImageView
 
-        fun toolbar_desing(navigation_icon:Int,
+        fun toolbar_desing(navigation_icon:Int?,
                            toolbar_color:Int,
                            toolbar_texts:String,
                            toolbar_text_color:Int,
@@ -35,7 +39,7 @@ class App: Application() {
             context.window.statusBarColor= status_bar_color
             toolbar.visibility=toolbar_visibility
             toolbar.setBackgroundColor(toolbar_color)
-            toolbar.setNavigationIcon(navigation_icon);
+            navigation_icon?.let { toolbar.setNavigationIcon(it) };
             return toolbar
         }
 

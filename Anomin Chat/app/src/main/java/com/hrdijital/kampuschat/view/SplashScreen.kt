@@ -44,8 +44,6 @@ class SplashScreen : Fragment() {
 
         App.manager= PreferencesManager(requireActivity())
 
-
-
         object : CountDownTimer(2000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
 

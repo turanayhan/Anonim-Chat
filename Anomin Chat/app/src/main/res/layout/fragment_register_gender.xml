@@ -19,18 +19,7 @@
         app:layout_constraintWidth_max="350dp"
         app:layout_constraintWidth_percent="0.8">
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/chat"
-            android:backgroundTint="@color/white"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.5" />
+
 
 
         <LinearLayout
@@ -161,7 +150,7 @@
 
         </LinearLayout>
 
-        <com.google.android.material.textview.MaterialTextView
+        <TextView
             android:id="@+id/datePickerBtn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -169,7 +158,7 @@
             android:clickable="true"
             android:fontFamily="@font/agletsansbold"
             android:gravity="center"
-            android:text="Gün - Ay - Yıl"
+            android:hint="Gün - Ay - Yıl"
             android:textAlignment="center"
             android:textColor="#C8CBCE"
             android:textSize="14sp"

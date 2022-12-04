@@ -43,9 +43,9 @@ constructor(context: Context) {
         editor.commit()
     }
 
-    fun getName() = preferences.getString(Name, "").toString()
+    fun getUser() = preferences.getString(Name, "").toString()
 
-    fun setName(name: String) {
+    fun setUser(name: String) {
         editor.putString(Name, name).commit()
         editor.commit()
     }

@@ -6,16 +6,18 @@ import android.os.Bundle
 import android.view.View
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.hrdijital.kampuschat.databinding.ActivityMainBinding
+import com.hrdijital.kampuschat.model.User
 import com.hrdijital.kampuschat.utils.App
 
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+     lateinit var binding: ActivityMainBinding
 
-   // private lateinit var navigationController: NavController
+   private lateinit var navigationController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,20 +27,22 @@ class MainActivity : AppCompatActivity() {
 
         App.toolbar = binding.ToolbarApp
         App.logo = binding.tolbarText
+        App.user= User(null,null,null,null,null,null,null,null)
         setSupportActionBar(App.toolbar)
 
-//       navigationController=Navigation.findNavController(this,R.id.fragmentContainerViews)
-  //      NavigationUI.setupActionBarWithNavController(this,navigationController)
+      /*  navigationController=Navigation.findNavController(this,R.id.fragment)
+        NavigationUI.setupActionBarWithNavController(this,navigationController)*/
 
 
 
 
     }
 
-  /* override fun onSupportNavigateUp(): Boolean {
+
+  /*override fun onSupportNavigateUp(): Boolean {
 
         return NavigationUI.navigateUp(navigationController,null)
-    }*/
-
+    }
+*/
 
 }

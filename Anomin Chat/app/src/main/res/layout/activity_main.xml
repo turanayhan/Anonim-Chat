@@ -28,7 +28,6 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/ToolbarApp"
         android:layout_width="match_parent"
-
         android:layout_height="40dp"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -51,7 +50,7 @@
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerViews"
+        android:id="@+id/fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
