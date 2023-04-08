@@ -1,5 +1,6 @@
 package com.hrdijital.kampuschat
 
+import android.app.Activity
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -25,12 +26,16 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
+
+
         App.toolbar = binding.ToolbarApp
         App.logo = binding.tolbarText
         App.user= User(null,null,null,null,null,null,null,null)
         setSupportActionBar(App.toolbar)
 
-      /*  navigationController=Navigation.findNavController(this,R.id.fragment)
+      /*  navigationController=Navigation.findNavController(ac,R.id.fragment)
         NavigationUI.setupActionBarWithNavController(this,navigationController)*/
 
 

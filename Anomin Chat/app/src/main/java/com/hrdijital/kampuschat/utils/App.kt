@@ -3,10 +3,13 @@ package com.hrdijital.kampuschat.utils
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.Application
+import android.view.View
 import android.widget.LinearLayout
 
 import android.widget.TextView
+import androidx.core.widget.TextViewCompat
 import com.hrdijital.kampuschat.model.User
+import org.w3c.dom.Text
 
 
 class App: Application() {
@@ -20,7 +23,8 @@ class App: Application() {
         lateinit var logo: LinearLayout
         @SuppressLint("StaticFieldLeak")
         lateinit var user:User
-
+        @SuppressLint("StaticFieldLeak")
+        lateinit var toolbarText:TextView
 
         // lateinit var toolbar_history: ImageView
 
@@ -33,16 +37,22 @@ class App: Application() {
                            context:Activity,
                            toolbar_visibility:Int,
                            logoVisibility:Int
-        ):androidx.appcompat.widget.Toolbar{
+        ){
+
 
             context.window.decorView.systemUiVisibility = status_bar_mode
             context.window.statusBarColor= status_bar_color
+
             toolbar.visibility=toolbar_visibility
             toolbar.setBackgroundColor(toolbar_color)
             navigation_icon?.let { toolbar.setNavigationIcon(it) };
-            return toolbar
+
         }
 
+        fun toolbarVisibility(visibilty:Int){
+            toolbar.visibility=View.GONE
+
+        }
 
     }
     override fun onCreate() {

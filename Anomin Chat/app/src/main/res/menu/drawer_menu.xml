@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/storys"
+        android:icon="@drawable/story"
+        android:title="Profil" />
+
+    <item android:id="@+id/message2s"
+        android:icon="@drawable/message"
+        android:title="Ayarlar" />
+
+    <item android:id="@+id/searchs"
+        android:icon="@drawable/exchange"
+        android:title="Sohbet" />
+
+</menu>

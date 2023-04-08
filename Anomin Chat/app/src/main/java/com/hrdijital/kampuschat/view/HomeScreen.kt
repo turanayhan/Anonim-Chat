@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavDirections
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import com.hrdijital.kampuschat.R
 import com.hrdijital.kampuschat.databinding.ActivityMainBinding
 import com.hrdijital.kampuschat.databinding.FragmentHomeScreenBinding
@@ -39,7 +40,7 @@ class HomeScreen : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        App.toolbar_desing(null,Color.parseColor("#604CE3"),"Kampus", Color.parseColor("#FFFFFF"),Color.parseColor("#604CE3"),View.SYSTEM_UI_FLAG_LAYOUT_STABLE,requireActivity(),View.VISIBLE,View.VISIBLE)
+
         binding.btnCreateAccount.setOnClickListener {
 
             action=HomeScreenDirections.actionHomeScreenToRegisterScreen()
@@ -49,6 +50,8 @@ class HomeScreen : Fragment() {
         binding.loginBtn.setOnClickListener {
             action=HomeScreenDirections.actionHomeScreenToLoginScreen()
             Navigation.findNavController(it).navigate(action)
+
+
         }
     }
 

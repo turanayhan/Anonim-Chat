@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="user"
+            type="com.hrdijital.kampuschat.model.User" />
+
+        <variable
+            name="listener"
+            type="com.hrdijital.kampuschat.adapter.AdapterClickListener" />
+
+    </data>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:onClick="@{listener::onAdapterClicked}"
+   >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circle_image"
+        android:padding="4dp"
+        android:src="@drawable/person_fill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/appCompatImageView"
+        app:layout_constraintTop_toTopOf="@+id/appCompatImageView">
+
+
+        <TextView
+            android:id="@+id/nameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/agletsanssemibold"
+            android:text="Turan"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/description"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/agletsanssemibold"
+            android:text="03/04/1999"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/agletsanssemibold"
+            android:text="Turan TuranTuranT "
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameUser" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

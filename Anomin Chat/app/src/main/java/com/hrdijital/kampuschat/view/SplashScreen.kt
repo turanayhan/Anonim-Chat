@@ -39,6 +39,8 @@ class SplashScreen : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        App.toolbarVisibility(View.GONE)
+
 
 
 

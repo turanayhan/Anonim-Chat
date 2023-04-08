@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_navigation"
+    app:startDestination="@id/story">
+
+    <fragment
+        android:id="@+id/message2"
+        android:name="com.hrdijital.kampuschat.view.Message"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" />
+    <fragment
+        android:id="@+id/story"
+        android:name="com.hrdijital.kampuschat.view.Story"
+        android:label="fragment_story"
+        tools:layout="@layout/fragment_story" />
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.hrdijital.kampuschat.view.Notification"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.hrdijital.kampuschat.view.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/search"
+        android:name="com.hrdijital.kampuschat.view.Search"
+        android:label="fragment_delete"
+        tools:layout="@layout/fragment_search" />
+</navigation>

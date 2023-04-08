@@ -11,9 +11,11 @@
         android:id="@+id/constraintLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.95"
+        app:layout_constraintHeight_percent="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_max="350dp"
@@ -108,14 +110,14 @@
 
             <TextView
                 android:id="@+id/loginBtn"
-                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
-                android:clickable="true"
                 android:backgroundTint="@color/bg_screen"
+                android:clickable="true"
                 android:fontFamily="@font/agletsansbold"
-                android:paddingLeft="2dp"
+                android:gravity="center"
                 android:letterSpacing="0.01"
+                android:paddingLeft="2dp"
                 android:text="Giriş Yap"
                 android:textColor="@color/white"
                 android:textSize="13.5sp" />
@@ -166,14 +168,6 @@
                 app:layout_constraintEnd_toEndOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
-
-
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
