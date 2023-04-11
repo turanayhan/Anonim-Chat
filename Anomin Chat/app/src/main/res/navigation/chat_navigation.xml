@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/message2"
-        android:name="com.hrdijital.kampuschat.view.Message"
+        android:name="com.hrdijital.kampuschat.view.UserList"
         android:label="fragment_message"
-        tools:layout="@layout/fragment_message" />
+        tools:layout="@layout/fragment_user_list" />
     <fragment
         android:id="@+id/story"
         android:name="com.hrdijital.kampuschat.view.Story"

@@ -15,7 +15,7 @@ import androidx.navigation.Navigation
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import com.hrdijital.kampuschat.R
-import com.hrdijital.kampuschat.databinding.FragmentMessageBinding
+
 import com.hrdijital.kampuschat.databinding.FragmentSettingsBinding
 import com.hrdijital.kampuschat.utils.App
 
