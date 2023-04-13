@@ -28,9 +28,8 @@
         app:hintTextColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:endIconDrawable="@drawable/send"
+        app:endIconDrawable="@drawable/send_logo"
         app:endIconTint="@color/black"
-
 
         app:endIconCheckable="true"
         >

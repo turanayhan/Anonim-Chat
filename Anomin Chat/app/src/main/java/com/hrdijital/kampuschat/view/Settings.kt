@@ -14,7 +14,11 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.hrdijital.kampuschat.R
+import com.hrdijital.kampuschat.adapter.MessageAdapter
+import com.hrdijital.kampuschat.adapter.UserAdapter
+import com.hrdijital.kampuschat.adapter.UserAdapterActive
 
 import com.hrdijital.kampuschat.databinding.FragmentSettingsBinding
 import com.hrdijital.kampuschat.utils.App
@@ -25,6 +29,8 @@ import com.hrdijital.kampuschat.utils.App
 class Settings : Fragment() {
 
     lateinit var binding: FragmentSettingsBinding
+    private  var messageAdapter: MessageAdapter = MessageAdapter(arrayListOf())
+
 
 
 
@@ -45,6 +51,11 @@ class Settings : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         App.toolbarText.text = "Ayarlar"
+
+        binding.recyclerView.layoutManager= LinearLayoutManager(context)
+        binding.recyclerView.adapter=messageAdapter
+
+
 
 
 
