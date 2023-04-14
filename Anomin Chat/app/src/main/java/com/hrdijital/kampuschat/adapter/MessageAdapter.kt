@@ -40,7 +40,15 @@ class MessageAdapter(val usertryList: ArrayList<User>): RecyclerView.Adapter<Mes
 
     override fun onBindViewHolder(holder: MessageViewHolder, position: Int) {
 
-        holder.view.msg=Message(" sizi gidi")
+        if (position%2==1){
+            holder.view.mesage=Message(" Sabah sabah iş  çıkartılar Sabah sabah iş  çıkartılar Sabah sabah iş  çıkartılar","turan","bino")
+        }
+        else{
+
+            holder.view.mesage=Message("Sabah sabah iş  çıkartılar Sabah sabah iş  Sabah sabah iş  çıkartılar Sabah sabah iş  Sabah sabah iş  çıkartılar Sabah sabah iş  Sabah sabah iş  çıkartılar Sabah sabah iş ","bino","bino")
+        }
+
+
 
         fun updateCountryList(newCountryList: List<User>) {
             usertryList.clear()

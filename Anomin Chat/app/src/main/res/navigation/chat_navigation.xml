@@ -9,7 +9,11 @@
         android:id="@+id/message2"
         android:name="com.hrdijital.kampuschat.view.UserList"
         android:label="fragment_message"
-        tools:layout="@layout/fragment_user_list" />
+        tools:layout="@layout/fragment_user_list" >
+        <action
+            android:id="@+id/action_message2_to_message3"
+            app:destination="@id/message3" />
+    </fragment>
     <fragment
         android:id="@+id/story"
         android:name="com.hrdijital.kampuschat.view.Story"
@@ -30,4 +34,9 @@
         android:name="com.hrdijital.kampuschat.view.Search"
         android:label="fragment_delete"
         tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/message3"
+        android:name="com.hrdijital.kampuschat.view.message"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" />
 </navigation>

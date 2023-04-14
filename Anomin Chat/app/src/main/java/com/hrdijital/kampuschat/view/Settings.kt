@@ -52,9 +52,6 @@ class Settings : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         App.toolbarText.text = "Ayarlar"
 
-        binding.recyclerView.layoutManager= LinearLayoutManager(context)
-        binding.recyclerView.adapter=messageAdapter
-
 
 
 

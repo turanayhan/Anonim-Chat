@@ -69,7 +69,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-
         app:layout_constraintEnd_toEndOf="@+id/recyler"
         app:layout_constraintStart_toStartOf="@+id/recyler"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />

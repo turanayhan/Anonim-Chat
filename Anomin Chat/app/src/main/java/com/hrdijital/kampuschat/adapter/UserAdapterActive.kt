@@ -5,12 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.NavDirections
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.hrdijital.kampuschat.R
+import com.hrdijital.kampuschat.databinding.FragmentUserListBinding
 import com.hrdijital.kampuschat.databinding.MessageItemUserBinding
 import com.hrdijital.kampuschat.model.User
+import com.hrdijital.kampuschat.view.UserListDirections
 
-class UserAdapterActive(val usertryList: ArrayList<User>): RecyclerView.Adapter<UserAdapterActive.UserViewHolder>(),AdapterClickListener {
+class UserAdapterActive(val usertryList: ArrayList<User>): RecyclerView.Adapter<UserAdapterActive.UserViewHolder>() {
+
 
 
     class UserViewHolder(var view: MessageItemUserBinding) : RecyclerView.ViewHolder(view.root) {
@@ -37,6 +42,16 @@ class UserAdapterActive(val usertryList: ArrayList<User>): RecyclerView.Adapter<
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
 
         holder.view.user = User("","","","","","",null,"",)
+        holder.view.cons.setOnClickListener {
+
+
+            val action=UserListDirections.actionMessage2ToMessage3()
+            Navigation.findNavController(it).navigate(action)
+
+
+        }
+
+
 
 
 
@@ -48,11 +63,6 @@ class UserAdapterActive(val usertryList: ArrayList<User>): RecyclerView.Adapter<
 
     }
 
-    override fun onAdapterClicked(v: View) {
-        Log.d("deneme", "dsvsvsvdvs");
-
-
-    }
 
 
 }
